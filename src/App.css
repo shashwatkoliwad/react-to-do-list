@@ -8,6 +8,10 @@
   pointer-events: none;
 }
 
+.Input-input[type="checkbox"]:checked + li{
+    text-decoration: line-through;
+  }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

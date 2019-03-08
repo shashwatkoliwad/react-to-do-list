@@ -11,6 +11,7 @@ class App extends Component {
     toDoList:[{id:1, task:"abc"}]
    }
    this.keyVal = this.keyVal.bind(this);
+   this.checkBoxEvent = this.checkBoxEvent.bind(this);
  }
 
  keyVal(e){
@@ -23,12 +24,18 @@ class App extends Component {
    }
  }
 
+checkBoxEvent(e){
+ if(e.target.checked){
+   console.log(e.target.nextSibling.style.textDecoration = "line-through")
 
-  render() {
+ }
+}
+
+  render(){
     return (
       <div className="App">
         <Input handleKeyPress={this.keyVal} />
-          {this.state.toDoList.map((list) =><ToDoList list={list.task} />)}
+          {this.state.toDoList.map((list) => <ToDoList list={list.task} checkBoxEvent={this.checkBoxEvent}/>)}
       </div>
     );
   }
