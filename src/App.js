@@ -22,17 +22,21 @@ class App extends Component {
      this.setState({
        toDoList: [...this.state.toDoList, toDo]
      }, () => {console.log(this.state.toDoList);});}
-     e.target.value = ""
+     e.target.value = "";
    }
 
  }
 
 checkBoxEvent= (e)=>{
  if(e.target.checked){
-   console.log(e.target.nextSibling.style.textDecoration = "line-through")
+   console.log(e.target.nextSibling.style.textDecoration = "line-through");
+ }
+   else{
+     e.target.nextSibling.style.textDecoration = "null";
+   }
 
  }
-}
+
 
 delTask=(index, e) =>{
    const tasks = Object.assign([],this.state.toDoList);
