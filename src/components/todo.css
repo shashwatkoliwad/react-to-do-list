@@ -1,3 +1,0 @@
-.todoList-  input[type="checkbox"]:checked + li{
-    text-decoration: line-through;
-  }

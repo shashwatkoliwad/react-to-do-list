@@ -6,6 +6,7 @@ const ToDoList = (props) => {
     <div>
       <input type="checkbox" onChange={props.checkBoxEvent}/>
       <li htmlFor='opt-in'>{props.list}</li>
+      <button onClick={props.delTask}>Delete</button>
     </div>
   )
 }
