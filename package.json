@@ -2,8 +2,9 @@
   "name": "to-do",
   "version": "0.1.0",
   "private": true,
-  "home": "https://shashwatkoliwad.github.io/react-to-do-list/",
+  "homepage": "https://shashwatkoliwad.github.io/react-to-do-list/",
   "dependencies": {
+    "@ionic/app-scripts": "^3.2.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
@@ -27,7 +28,6 @@
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "git-push": "^0.1.1",
-    "react-scripts": "^2.1.8",
-    "ws": "3.3.2"
+    "react-scripts": "^2.1.8"
   }
 }
