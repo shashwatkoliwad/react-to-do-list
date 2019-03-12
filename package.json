@@ -2,6 +2,7 @@
   "name": "to-do",
   "version": "0.1.0",
   "private": true,
+  "home":"https://shashwatkoliwad.github.io/react-to-do-list/",
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
