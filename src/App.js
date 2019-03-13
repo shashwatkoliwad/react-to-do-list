@@ -47,6 +47,7 @@ delTask=(index, e) =>{
   render(){
     return (
       <div className="App">
+      <h3>Your To Do List</h3>
         <Input handleKeyPress={this.keyVal} />
           {this.state.toDoList.map((list, index) => <ToDoList list={list.task}
            checkBoxEvent={this.checkBoxEvent}
